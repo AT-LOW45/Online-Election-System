@@ -42,7 +42,9 @@ public class Register implements ControllerAction {
 
         Validator<Profile> profileValidator = new Validator<>(newProfile);
         boolean result = profileValidator
-                .validate(profile -> profile.getPassword().matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"),
+                .validate(
+                        profile -> profile.getPassword()
+                                .matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"),
                         "password",
                         "Password does not meet requirements")
                 .validate(profile -> confirmPassword.equals(profile.getPassword()),
@@ -77,19 +79,17 @@ public class Register implements ControllerAction {
 
                 response.setHeader("Cache-Control", "private, no-store, no-cache, must-revalidate");
 
-                if (newProfile.getRole().equals(Role.COMMITTEE)) {
+                HttpSession userSession = request.getSession(false);
+                userSession.setAttribute("userId", newProfile.getId());
+                userSession.setAttribute("username", newProfile.getUsername());
+                userSession.setAttribute("role", newProfile.getRole());
+                userSession.setAttribute("tpNumber", newProfile.getTpNumber());
+                userSession.setAttribute("approved", newProfile.isStatus());
 
+                if (newProfile.getRole().equals(Role.COMMITTEE)) {
                     request.getRequestDispatcher("ProfileController?profileAction=FIND_ALL_PROFILE")
                             .include(request, response);
-
                 } else {
-                    HttpSession userSession = request.getSession(false);
-                    userSession.setAttribute("userId", newProfile.getId());
-                    userSession.setAttribute("username", newProfile.getUsername());
-                    userSession.setAttribute("role", newProfile.getRole());
-                    userSession.setAttribute("tpNumber", newProfile.getTpNumber());
-                    userSession.setAttribute("approved", newProfile.isStatus());
-
                     request.getRequestDispatcher("ElectionController?electionAction=FIND_ELECTIONS")
                             .include(request, response);
                 }
@@ -107,7 +107,8 @@ public class Register implements ControllerAction {
     private ProfileFacade lookupProfileFacadeBean() {
         try {
             Context c = new InitialContext();
-            return (ProfileFacade) c.lookup("java:global/Online_Election_System/Online_Election_System-ejb/ProfileFacade!model.facade.ProfileFacade");
+            return (ProfileFacade) c.lookup(
+                    "java:global/Online_Election_System/Online_Election_System-ejb/ProfileFacade!model.facade.ProfileFacade");
         } catch (NamingException ne) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", ne);
             throw new RuntimeException(ne);
@@ -117,7 +118,8 @@ public class Register implements ControllerAction {
     private ContesterFacade lookupContesterFacadeBean() {
         try {
             Context c = new InitialContext();
-            return (ContesterFacade) c.lookup("java:global/Online_Election_System/Online_Election_System-ejb/ContesterFacade!model.facade.ContesterFacade");
+            return (ContesterFacade) c.lookup(
+                    "java:global/Online_Election_System/Online_Election_System-ejb/ContesterFacade!model.facade.ContesterFacade");
         } catch (NamingException ne) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", ne);
             throw new RuntimeException(ne);
@@ -127,7 +129,8 @@ public class Register implements ControllerAction {
     private VoterFacade lookupVoterFacadeBean() {
         try {
             Context c = new InitialContext();
-            return (VoterFacade) c.lookup("java:global/Online_Election_System/Online_Election_System-ejb/VoterFacade!model.facade.VoterFacade");
+            return (VoterFacade) c.lookup(
+                    "java:global/Online_Election_System/Online_Election_System-ejb/VoterFacade!model.facade.VoterFacade");
         } catch (NamingException ne) {
             Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", ne);
             throw new RuntimeException(ne);

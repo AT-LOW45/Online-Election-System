@@ -78,6 +78,7 @@
                                         
                                         <option value="CONTESTER" selected>Contester</option>
                                         <option value="VOTER">Voter</option>
+                                        <option value="COMMITTEE">Committee</option>
                                     </select>
                                 </div>
                             </div>
