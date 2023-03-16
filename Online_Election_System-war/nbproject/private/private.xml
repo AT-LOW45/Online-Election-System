@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/js_resources.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/FindByTp.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/contest_seat_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/hero.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/vote_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/authentication/Register.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/update_user_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/add_committee_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/approve_user_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/FindCurrentProfile.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/delete_user_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/register.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/ProfileActionType.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/ApproveUser.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/tags/minimal_layout.tag</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/login.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/election/FindSelectedElection.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/utility/Validator.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/add_seat_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/index.html</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/UpdateUserProfile.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/SortByCriteria.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/js/dropToggle.js</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/election_report.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/js/toast.js</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/profile.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/js/election_details_page.js</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/FindByRoleAndStatus.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/authentication/Login.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/new_election_modal.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/js/users_page.js</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/users.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/side_navigation.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/css_resources.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/meta.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/DeleteUser.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/election_details.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/includes/components/toast.jsp</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/WEB-INF/tags/layout.tag</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/src/java/controller/profile/FindAllProfiles.java</file>
+            <file>file:/C:/Users/Koh/Desktop/Online_Election_System/Online_Election_System-war/web/election.jsp</file>
+        </group>
+    </open-files>
+</project-private>
